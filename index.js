@@ -322,3 +322,30 @@ let libreria = [
         peso: "280 g"
     }
 ];
+
+let nuevoLibro ={
+        titulo: "habitos atonicos",
+        autor: "William pansea",
+        genero: "Refelxion",
+        idioma: "español",
+        formato: "Tapa blanda",
+        isbn: "978-84-206-3737-01",
+        descripcion: "equeños cambios cotidianos que, con el paso del tiempo y el tesón, se convertirán en rutina, haciendo cambiar nuestro comportamiento y, por lo tanto, nuestra existencia.",
+        estado: "Nuevo",
+        ubicacion: "Estantería 50, Sección A",
+        fecha_publicacion: "1 de enero de 2018",
+        editorial: "Alianza Editorial",
+        paginas: 520,
+        dimensiones: "20 x 11.5 x 4 cm",
+        peso: "300 g"
+}
+
+libreria.push(nuevoLibro)
+console.log(libreria)
+libreria.splice(1,1)
+console.log(libreria);
+
+
+libreria.forEach((libro,index) =>{
+    console.log(`${index +1} titulo : ${libro.titulo}`);
+})
