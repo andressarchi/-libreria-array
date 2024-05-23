@@ -466,12 +466,12 @@ console.table(DESCRIPCION)
 console.table(ISBN)
 console.table(FORMATO)
 console.table(FECHA)
+console.log("-------------------------------------------------------------------------------------------------");
 
-
-----------------------menu--------------------------------------
-let continuar= "si"
+//----------------------menu--------------------------------------
+let continuar= "si";
 while (continuar === "si") {
-    let menu= prompt("que quieres hacer \n1. ver libros disponibles\n2.agregar nuevo libro\n3.borrar un libro");
+    let menu= prompt("que quieres hacer \n1. ver libros disponibles\n2.agregar nuevo libro\n3.borrar un libro\n4.listado de libros");
     switch (menu) {
         case "1":
             let decision= prompt("deseas ver los demas datos")
@@ -513,6 +513,40 @@ while (continuar === "si") {
                 libreria.splice(indice, 1)
                 console.log("borrado con exito");
                 break;
+        case "4":
+            let decision2= prompt("Que listado quieres ver \n1.Editorial\n2.peso\n3.precio\n4.estado\n5.ubicacion\n6.paginas\n7.dimensiones\n8.descripcion\n9.isbn\n10.formato\n11.fecha")
+            if (decision2 ===1 || decision2 === "1") {
+                console.table(Editorial)
+            }
+            if (decision2 ===2 || decision2 === "2") {
+                console.table(PESO)
+            }
+            if (decision2 ===3 || decision2 === "3") {
+                console.table(PRECIO)
+            }if (decision2 ===4 || decision2 === "4") {
+                console.table(ESTADO)
+            }
+            if (decision2 ===5 || decision2 === "5") {
+                console.table(UBICACION)
+            }
+            if (decision2 ===6 || decision2 === "6") {
+                console.table(PAGINAS)
+            }
+            if (decision2 ===7 || decision2 === "7") {
+                console.table(DIMENSIONES)
+            }
+            if (decision2 ===8 || decision2 === "8") {
+                console.table(DESCRIPCION)
+            }
+            if (decision2 ===9 || decision2 === "9") {
+                console.table(ISBN)
+            }
+            if (decision2 ===10 || decision2 === "10") {
+                console.table(FORMATO)
+            }if (decision2 ===11 || decision2 === "11") {
+                console.table(FECHA)
+            }
+            break;
         default:
             break;
     }
