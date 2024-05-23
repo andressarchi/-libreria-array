@@ -13,7 +13,8 @@ let libreria = [
         editorial: "Vintage",
         paginas: 589,
         dimensiones: "20.3 x 13.2 x 3.8 cm",
-        peso: "400 g"
+        peso: "400 g",
+        precio:10.99
     },
     {
         titulo: "Harry Potter y la piedra filosofal",
@@ -26,10 +27,11 @@ let libreria = [
         estado: "Usado",
         ubicacion: "Estantería 2, Sección B",
         fecha_publicacion: "1 de septiembre de 1998",
-        editorial: "Salamandra",
+        editorial: "Vintage",
         paginas: 256,
         dimensiones: "21.6 x 14 x 3.2 cm",
-        peso: "350 g"
+        peso: "350 g",
+        precio:10.99
     },
 
     
@@ -44,10 +46,11 @@ let libreria = [
         estado: "Nuevo",
         ubicacion: "Estantería 3, Sección C",
         fecha_publicacion: "30 de mayo de 1967",
-        editorial: "Editorial Sudamericana",
+        editorial: "Vintage",
         paginas: 432,
         dimensiones: "20 x 13.5 x 3 cm",
-        peso: "350 g"
+        peso: "350 g",
+        precio:10.99
     },
     {
         titulo: "1984",
@@ -60,10 +63,11 @@ let libreria = [
         estado: "Nuevo",
         ubicacion: "Estantería 4, Sección D",
         fecha_publicacion: "8 de junio de 1949",
-        editorial: "Secker & Warburg",
+        editorial: "Vintage",
         paginas: 328,
         dimensiones: "21.6 x 14.6 x 3 cm",
-        peso: "400 g"
+        peso: "400 g",
+        precio:10.99
     },
 
     {
@@ -77,10 +81,11 @@ let libreria = [
         estado: "Usado",
         ubicacion: "Estantería 5, Sección E",
         fecha_publicacion: "28 de enero de 1813",
-        editorial: "T. Egerton, Whitehall",
+        editorial: "Vintage",
         paginas: 432,
         dimensiones: "19.7 x 12.7 x 2.8 cm",
-        peso: "300 g"
+        peso: "300 g",
+        precio:10.99
     },
     {
         titulo: "Moby Dick",
@@ -96,7 +101,8 @@ let libreria = [
         editorial: "Richard Bentley",
         paginas: 625,
         dimensiones: "23 x 15.5 x 4.5 cm",
-        peso: "550 g"
+        peso: "550 g",
+        precio:10.99
     },
     {
         titulo: "El señor de los anillos: La comunidad del anillo",
@@ -109,10 +115,11 @@ let libreria = [
         estado: "Nuevo",
         ubicacion: "Estantería 7, Sección G",
         fecha_publicacion: "29 de julio de 1954",
-        editorial: "Minotauro",
+        editorial: "Richard Bentley",
         paginas: 496,
         dimensiones: "21.5 x 15 x 3.5 cm",
-        peso: "480 g"
+        peso: "480 g",
+        precio:10.99
     },
     {
         titulo: "Crónica de una muerte anunciada",
@@ -125,10 +132,11 @@ let libreria = [
         estado: "Nuevo",
         ubicacion: "Estantería 8, Sección H",
         fecha_publicacion: "1 de enero de 1981",
-        editorial: "Editorial Sudamericana",
+        editorial: "Richard Bentley",
         paginas: 128,
         dimensiones: "20 x 13.5 x 1 cm",
-        peso: "150 g"
+        peso: "150 g",
+        precio:10.99
     },
     {
         titulo: "Los miserables",
@@ -141,10 +149,11 @@ let libreria = [
         estado: "Nuevo",
         ubicacion: "Estantería 9, Sección I",
         fecha_publicacion: "3 de abril de 1862",
-        editorial: "A. Lacroix, Verboeckhoven & Cie.",
+        editorial: "Richard Bentley",
         paginas: 1800,
         dimensiones: "19 x 13 x 6 cm",
-        peso: "900 g"
+        peso: "900 g",
+        precio:10.99
     },
     {
         titulo: "El retrato de Dorian Gray",
@@ -157,10 +166,11 @@ let libreria = [
         estado: "Usado",
         ubicacion: "Estantería 10, Sección J",
         fecha_publicacion: "20 de junio de 1890",
-        editorial: "Ward, Lock & Co.",
+        editorial: "Richard Bentley",
         paginas: 254,
         dimensiones: "20 x 14 x 2 cm",
-        peso: "350 g"
+        peso: "350 g",
+        precio:10.99
     },
     {
         titulo: "Don Quijote de la Mancha",
@@ -176,7 +186,8 @@ let libreria = [
         editorial: "Juan de la Cuesta",
         paginas: 863,
         dimensiones: "21 x 15 x 4 cm",
-        peso: "600 g"
+        peso: "600 g",
+        precio:10.99
     },
     {
         titulo: "El principito",
@@ -189,10 +200,11 @@ let libreria = [
         estado: "Nuevo",
         ubicacion: "Estantería 12, Sección L",
         fecha_publicacion: "6 de abril de 1943",
-        editorial: "Reynal & Hitchcock",
+        editorial: "Juan de la Cuesta",
         paginas: 96,
         dimensiones: "22.5 x 15 x 1.5 cm",
-        peso: "200 g"
+        peso: "200 g",
+        precio:10.99
     },
     {
         titulo: "Anna Karenina",
@@ -205,10 +217,11 @@ let libreria = [
         estado: "Nuevo",
         ubicacion: "Estantería 13, Sección M",
         fecha_publicacion: "20 de octubre de 1877",
-        editorial: "Signet Classics",
+        editorial: "Juan de la Cuesta",
         paginas: 864,
         dimensiones: "21 x 14 x 5 cm",
-        peso: "750 g"
+        peso: "750 g",
+        precio:10.99
     },
     {
         titulo: "El gran Gatsby",
@@ -221,10 +234,11 @@ let libreria = [
         estado: "Nuevo",
         ubicacion: "Estantería 14, Sección N",
         fecha_publicacion: "10 de abril de 1925",
-        editorial: "Charles Scribner's Sons",
+        editorial: "Juan de la Cuesta",
         paginas: 180,
         dimensiones: "20 x 13 x 2.5 cm",
-        peso: "300 g"
+        peso: "300 g",
+        precio:10.99
     },
     {
         titulo: "La Odisea",
@@ -237,10 +251,11 @@ let libreria = [
         estado: "Nuevo",
         ubicacion: "Estantería 15, Sección O",
         fecha_publicacion: "Siglo VIII a.C.",
-        editorial: "Alianza Editorial",
+        editorial: "Juan de la Cuesta",
         paginas: 368,
         dimensiones: "19 x 12.5 x 2 cm",
-        peso: "250 g"
+        peso: "250 g",
+        precio:10.99
     },
     {
         titulo: "Drácula",
@@ -256,7 +271,8 @@ let libreria = [
         editorial: "Alianza Editorial",
         paginas: 608,
         dimensiones: "18.5 x 12.5 x 3.5 cm",
-        peso: "400 g"
+        peso: "400 g",
+        precio:10.99
     },
     {
         titulo: "Frankenstein",
@@ -272,7 +288,8 @@ let libreria = [
         editorial: "Alianza Editorial",
         paginas: 288,
         dimensiones: "21 x 14.5 x 2 cm",
-        peso: "350 g"
+        peso: "350 g",
+        precio:10.99
     },
     {
         titulo: "Las aventuras de Tom Sawyer",
@@ -288,7 +305,8 @@ let libreria = [
         editorial: "Alianza Editorial",
         paginas: 368,
         dimensiones: "18.5 x 12.5 x 2 cm",
-        peso: "300 g"
+        peso: "300 g",
+        precio:10.99
     },
     {
         titulo: "Matar a un ruiseñor",
@@ -304,7 +322,8 @@ let libreria = [
         editorial: "Alianza Editorial",
         paginas: 376,
         dimensiones: "19 x 13 x 2.5 cm",
-        peso: "320 g"
+        peso: "320 g",
+        precio:10.99
     },
     {
         titulo: "Romeo y Julieta",
@@ -320,7 +339,8 @@ let libreria = [
         editorial: "Alianza Editorial",
         paginas: 320,
         dimensiones: "18 x 11.5 x 2 cm",
-        peso: "280 g"
+        peso: "280 g",
+        precio:10.99
     }
 ];
 
@@ -341,18 +361,114 @@ let nuevoLibro ={
         peso: "300 g"
 }
 
-libreria.push(nuevoLibro)
-console.log(libreria)
-libreria.splice(1,1)
-console.log(libreria);
+// libreria.push(nuevoLibro)
+// console.log(libreria)
+
+// console.log(libreria);
 
 
-libreria.forEach((libro,index) =>{
-    console.log(`${index +1} titulo : ${libro.titulo}`);
-})
+// libreria.forEach((libro,index) =>{
+//     console.log(`${index +1} titulo : ${libro.titulo}`);
+// })
+//---------------------metodo map---------------------------------
+ const TITULO= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        autor:libro.autor,
+        editorial:libro.editorial
+    }
+ })
+
+ const Editorial= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        editorial:libro.editorial
+    }
+ })
+
+ const PESO= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        peso:libro.peso,
+    }
+ })
+ const PRECIO= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        precio:libro.precio,
+    }
+ })
+ const ESTADO= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        estado:libro.estado,
+        
+    }
+ })
+ const UBICACION= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        ubicacion:libro.ubicacion,
+        
+    }
+ })
+ const PAGINAS= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        paginas:libro.paginas,
+        
+    }
+ })
+ const DIMENSIONES= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        dimensiones:libro.dimensiones,
+        
+    }
+ })
+ const FECHA= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        fecha:libro.fecha_publicacion,
+        
+    }
+ })
+ const ISBN= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        isbn:libro.isbn,
+        
+    }
+ })
+ const DESCRIPCION= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        descripcion:libro.descripcion,
+        
+    }
+ })
+ const FORMATO= libreria.map((libro)=>{
+    return{
+        titulo:libro.titulo,
+        formato:libro.formato,
+        
+    }
+ })
+console.table(TITULO)
+console.table(Editorial)
+console.table(PESO)
+console.table(PRECIO)
+console.table(ESTADO)
+console.table(UBICACION)
+console.table(PAGINAS)
+console.table(DIMENSIONES)
+console.table(DESCRIPCION)
+console.table(ISBN)
+console.table(FORMATO)
+console.table(FECHA)
 
 
-
+----------------------menu--------------------------------------
 let continuar= "si"
 while (continuar === "si") {
     let menu= prompt("que quieres hacer \n1. ver libros disponibles\n2.agregar nuevo libro\n3.borrar un libro");
