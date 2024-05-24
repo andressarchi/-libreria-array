@@ -14,7 +14,7 @@ let libreria = [
         paginas: 589,
         dimensiones: "20.3 x 13.2 x 3.8 cm",
         peso: "400 g",
-        precio:10.99
+        precio:7
     },
     {
         titulo: "Harry Potter y la piedra filosofal",
@@ -31,7 +31,7 @@ let libreria = [
         paginas: 256,
         dimensiones: "21.6 x 14 x 3.2 cm",
         peso: "350 g",
-        precio:10.99
+        precio:26
     },
 
     
@@ -50,7 +50,7 @@ let libreria = [
         paginas: 432,
         dimensiones: "20 x 13.5 x 3 cm",
         peso: "350 g",
-        precio:10.99
+        precio:28
     },
     {
         titulo: "1984",
@@ -67,7 +67,7 @@ let libreria = [
         paginas: 328,
         dimensiones: "21.6 x 14.6 x 3 cm",
         peso: "400 g",
-        precio:10.99
+        precio:30
     },
 
     {
@@ -102,7 +102,7 @@ let libreria = [
         paginas: 625,
         dimensiones: "23 x 15.5 x 4.5 cm",
         peso: "550 g",
-        precio:10.99
+        precio:14
     },
     {
         titulo: "El señor de los anillos: La comunidad del anillo",
@@ -119,7 +119,7 @@ let libreria = [
         paginas: 496,
         dimensiones: "21.5 x 15 x 3.5 cm",
         peso: "480 g",
-        precio:10.99
+        precio:16.5
     },
     {
         titulo: "Crónica de una muerte anunciada",
@@ -136,7 +136,7 @@ let libreria = [
         paginas: 128,
         dimensiones: "20 x 13.5 x 1 cm",
         peso: "150 g",
-        precio:10.99
+        precio:16
     },
     {
         titulo: "Los miserables",
@@ -153,7 +153,7 @@ let libreria = [
         paginas: 1800,
         dimensiones: "19 x 13 x 6 cm",
         peso: "900 g",
-        precio:10.99
+        precio:14
     },
     {
         titulo: "El retrato de Dorian Gray",
@@ -170,7 +170,7 @@ let libreria = [
         paginas: 254,
         dimensiones: "20 x 14 x 2 cm",
         peso: "350 g",
-        precio:10.99
+        precio:25.8
     },
     {
         titulo: "Don Quijote de la Mancha",
@@ -187,7 +187,7 @@ let libreria = [
         paginas: 863,
         dimensiones: "21 x 15 x 4 cm",
         peso: "600 g",
-        precio:10.99
+        precio:25
     },
     {
         titulo: "El principito",
@@ -204,7 +204,7 @@ let libreria = [
         paginas: 96,
         dimensiones: "22.5 x 15 x 1.5 cm",
         peso: "200 g",
-        precio:10.99
+        precio:5
     },
     {
         titulo: "Anna Karenina",
@@ -221,7 +221,7 @@ let libreria = [
         paginas: 864,
         dimensiones: "21 x 14 x 5 cm",
         peso: "750 g",
-        precio:10.99
+        precio:21
     },
     {
         titulo: "El gran Gatsby",
@@ -238,7 +238,7 @@ let libreria = [
         paginas: 180,
         dimensiones: "20 x 13 x 2.5 cm",
         peso: "300 g",
-        precio:10.99
+        precio:11.5
     },
     {
         titulo: "La Odisea",
@@ -255,7 +255,7 @@ let libreria = [
         paginas: 368,
         dimensiones: "19 x 12.5 x 2 cm",
         peso: "250 g",
-        precio:10.99
+        precio:11
     },
     {
         titulo: "Drácula",
@@ -272,7 +272,7 @@ let libreria = [
         paginas: 608,
         dimensiones: "18.5 x 12.5 x 3.5 cm",
         peso: "400 g",
-        precio:10.99
+        precio:12
     },
     {
         titulo: "Frankenstein",
@@ -289,7 +289,7 @@ let libreria = [
         paginas: 288,
         dimensiones: "21 x 14.5 x 2 cm",
         peso: "350 g",
-        precio:10.99
+        precio:10
     },
     {
         titulo: "Las aventuras de Tom Sawyer",
@@ -306,7 +306,7 @@ let libreria = [
         paginas: 368,
         dimensiones: "18.5 x 12.5 x 2 cm",
         peso: "300 g",
-        precio:10.99
+        precio:19.99
     },
     {
         titulo: "Matar a un ruiseñor",
@@ -340,7 +340,7 @@ let libreria = [
         paginas: 320,
         dimensiones: "18 x 11.5 x 2 cm",
         peso: "280 g",
-        precio:10.99
+        precio:8.99
     }
 ];
 
@@ -358,7 +358,8 @@ let nuevoLibro ={
         editorial: "Alianza Editorial",
         paginas: 520,
         dimensiones: "20 x 11.5 x 4 cm",
-        peso: "300 g"
+        peso: "300 g",
+        precio:15
 }
 
 // libreria.push(nuevoLibro)
@@ -467,11 +468,26 @@ console.table(ISBN)
 console.table(FORMATO)
 console.table(FECHA)
 console.log("-------------------------------------------------------------------------------------------------");
-
+//------------------spreed operator.-----------------------------
+// const spreed= libreria.map((libro)=>{
+//     return{
+//         ...libro,
+//         descuento:0.20
+//     }
+// })
+// const MostrarDescuento= libreria.map((libro)=>{
+//     return{
+//         titulo:libro.titulo,
+//         autor:libro.autor,
+//         editorial:libro.editorial,
+//         precio:libro.precio,
+//         descuento:libro.descuento
+//     }
+// })
 //----------------------menu--------------------------------------
 let continuar= "si";
 while (continuar === "si") {
-    let menu= prompt("que quieres hacer \n1. ver libros disponibles\n2.agregar nuevo libro\n3.borrar un libro\n4.listado de libros");
+    let menu= prompt("que quieres hacer \n1. ver libros disponibles\n2.agregar nuevo libro\n3.borrar un libro\n4.listado de libros\n5.agregar Decuento a productos");
     switch (menu) {
         case "1":
             let decision= prompt("deseas ver los demas datos")
@@ -546,6 +562,24 @@ while (continuar === "si") {
             }if (decision2 ===11 || decision2 === "11") {
                 console.table(FECHA)
             }
+            break;
+        case "5":
+            const spreed= libreria.map((libro)=>{
+                return{
+                    ...libro,
+                    descuento:0.20
+                }
+            })
+            const MostrarDescuento= libreria.map((libro)=>{
+                return{
+                    titulo:libro.titulo,
+                    autor:libro.autor,
+                    editorial:libro.editorial,
+                    precio:libro.precio,
+                    descuento:libro.descuento
+                }
+            })
+            console.table(MostrarDescuento)
             break;
         default:
             break;
