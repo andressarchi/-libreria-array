@@ -455,20 +455,23 @@ let nuevoLibro ={
         
     }
  })
-console.table(TITULO)
-console.table(Editorial)
-console.table(PESO)
-console.table(PRECIO)
-console.table(ESTADO)
-console.table(UBICACION)
-console.table(PAGINAS)
-console.table(DIMENSIONES)
-console.table(DESCRIPCION)
-console.table(ISBN)
-console.table(FORMATO)
-console.table(FECHA)
-console.log("-------------------------------------------------------------------------------------------------");
+// console.table(TITULO)
+// console.table(Editorial)
+// console.table(PESO)
+// console.table(PRECIO)
+// console.table(ESTADO)
+// console.table(UBICACION)
+// console.table(PAGINAS)
+// console.table(DIMENSIONES)
+// console.table(DESCRIPCION)
+// console.table(ISBN)
+// console.table(FORMATO)
+// console.table(FECHA)
+
+
+
 //------------------spreed operator.-----------------------------
+
 // const spreed= libreria.map((libro)=>{
 //     return{
 //         ...libro,
@@ -484,10 +487,15 @@ console.log("-------------------------------------------------------------------
 //         descuento:libro.descuento
 //     }
 // })
+//----------------------filter-----------------------------------
+// const Libroscaros= libreria.filter((libro)=>{
+//     return libro.precio>16
+// })
+
 //----------------------menu--------------------------------------
 let continuar= "si";
 while (continuar === "si") {
-    let menu= prompt("que quieres hacer \n1. ver libros disponibles\n2.agregar nuevo libro\n3.borrar un libro\n4.listado de libros\n5.agregar Decuento a productos");
+    let menu= prompt("que deseas realizar\n1. ver libros disponibles\n2.agregar nuevo libro\n3.borrar un libro\n4.listado de libros\n5.agregar Decuento a productos\n6.resumen de este segmento");
     switch (menu) {
         case "1":
             let decision= prompt("deseas ver los demas datos")
@@ -516,12 +524,13 @@ while (continuar === "si") {
                 editorial: prompt("editorial"),
                 paginas:prompt("paginas"),
                 dimensiones: prompt("dimensiones"),
-                peso: prompt("peso")
+                peso: prompt("peso"),
+                precio:prompt("precio")
             }
             libreria.push(nuevo)
             console.log("agregado con exito");
             libreria.forEach((libro,index) =>{
-                console.log(`${index +1} titulo : ${libro.titulo}`);
+                console.log(`${index } titulo : ${libro.titulo}`);
             })
             break;
         case "3":
@@ -581,6 +590,66 @@ while (continuar === "si") {
             })
             console.table(MostrarDescuento)
             break;
+        case"6":
+            let decision3=prompt("Que deseas ver :\n1.libros mayores a 50 dolares\n2.libros con menos de 100 paginas\n3.libros mayores a 20 dolares\n4.ver libros con el numero mas alto de paginas ")
+            switch (decision3) {
+                case "1":
+                    const Libroscaros= libreria.filter((libro)=>{
+                        return libro.precio>50
+                    }).map((libro)=>{
+                        return{
+                            titulo:libro.titulo,
+                            autor:libro.autor,
+                            precio:libro.precio
+                        }
+                    })
+                  
+                    break;
+                case "2":
+                    const LibrosPaginas= libreria.filter((libro)=>{
+                        return libro.paginas<100
+                    }).map((libro)=>{
+                        return{
+                            titulo:libro.titulo,
+                            autor:libro.autor,
+                            editorial:libro.editorial,
+                            paginas:libro.paginas
+                        }
+                    })
+                 
+                        console.table(LibrosPaginas)
+                    
+                    break;
+                case "3":
+                    const Libroscaros20= libreria.filter((libro)=>{
+                        return libro.precio>20
+                    }).map((libro)=>{
+                        return{
+                            titulo:libro.titulo,
+                            autor:libro.autor,
+                            precio:libro.precio
+                        }
+                    })
+                   
+                        console.table(Libroscaros20)
+                   
+                    break;
+                case "4":
+                    const paginasM= libreria.sort((a, b)=>b.paginas-a.paginas).map((libro)=>{
+                        return{
+                            titulo:libro.titulo,
+                            autor:libro.autor,
+                            precio:libro.precio
+                        }
+                    })
+                    
+                        console.table(paginasM)
+                   
+                    break;
+                default:
+                    break;
+            }
+        break;
         default:
             break;
     }
