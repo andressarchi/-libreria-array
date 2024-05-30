@@ -634,15 +634,24 @@ while (continuar === "si") {
                     break;
                 
                 case "3":
-                    const paginasM= libreria.sort((a, b)=>b.paginas-a.paginas).map((libro)=>{
-                        return{
-                            titulo:libro.titulo,
-                            autor:libro.autor,
-                            paginas:libro.paginas
-                        }
-                    })
+                    let opcion = prompt("1.todos los datos\n2.datos especificos")
+                    if (opcion === "1") {
+                        const paginasM= libreria.sort((a, b)=>b.paginas-a.paginas)
+                        
+                            console.table(paginasM)
+                    }else{
+                        const paginasM= libreria.sort((a, b)=>b.paginas-a.paginas).map((libro)=>{
+                            return{
+                                titulo:libro.titulo,
+                                autor:libro.autor,
+                                paginas:libro.paginas
+                            }
+                        })
+                        
+                            console.table(paginasM)
+
+                    }
                     
-                        console.table(paginasM)
                    
                     break;
                 case "4":
