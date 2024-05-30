@@ -574,21 +574,33 @@ while (continuar === "si") {
             }
             break;
         case "5":
-            const spreed= libreria.map((libro)=>{
-                return{
-                    ...libro,
-                    descuento:20
-                }
-            }).map((libro)=>{
-                return{
-                    titulo:libro.titulo,
-                    autor:libro.autor,
-                    editorial:libro.editorial,
-                    precio:libro.precio,
-                    descuento:libro.descuento
-                }
-            })
-            console.table(spreed)
+            let propuesta =("1.descuento todos los campo\n2.descuento campos expecificos")
+            if (propuesta === "1") {
+                const spreed= libreria.map((libro)=>{
+                    return{
+                        ...libro,
+                        descuento:20
+                    }
+                })
+                
+                console.table(spreed)
+            }else{
+                const spreed= libreria.map((libro)=>{
+                    return{
+                        ...libro,
+                        descuento:20
+                    }
+                }).map((libro)=>{
+                    return{
+                        titulo:libro.titulo,
+                        editorial:libro.editorial,
+                        precio:libro.precio,
+                        descuento:libro.descuento
+                    }
+                })
+                
+                console.table(spreed)
+            }
             break;
         case"6":
             let decision3=prompt("Que deseas ver :\n1.libros mayores a 25 dolares\n2.libros con menos de 100 paginas\n3.ver libros con el numero mas alto de paginas \n4.libros mas caros\n5. informacion basica de el libro")
