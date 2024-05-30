@@ -576,10 +576,9 @@ while (continuar === "si") {
             const spreed= libreria.map((libro)=>{
                 return{
                     ...libro,
-                    descuento:0.20
+                    descuento:20
                 }
-            })
-            const MostrarDescuento= libreria.map((libro)=>{
+            }).map((libro)=>{
                 return{
                     titulo:libro.titulo,
                     autor:libro.autor,
@@ -588,7 +587,7 @@ while (continuar === "si") {
                     descuento:libro.descuento
                 }
             })
-            console.table(MostrarDescuento)
+            console.table(spreed)
             break;
         case"6":
             let decision3=prompt("Que deseas ver :\n1.libros mayores a 50 dolares\n2.libros con menos de 100 paginas\n3.libros mayores a 20 dolares\n4.ver libros con el numero mas alto de paginas ")
@@ -639,7 +638,7 @@ while (continuar === "si") {
                         return{
                             titulo:libro.titulo,
                             autor:libro.autor,
-                            precio:libro.precio
+                            paginas:libro.paginas
                         }
                     })
                     
