@@ -591,7 +591,7 @@ while (continuar === "si") {
             console.table(spreed)
             break;
         case"6":
-            let decision3=prompt("Que deseas ver :\n1.libros mayores a 25 dolares\n2.libros con menos de 100 paginas\n3.libros mayores a 11 dolares\n4.ver libros con el numero mas alto de paginas \n5.libros mas caros\n6. informacion basica de el libro")
+            let decision3=prompt("Que deseas ver :\n1.libros mayores a 25 dolares\n2.libros con menos de 100 paginas\n3.ver libros con el numero mas alto de paginas \n4.libros mas caros\n5. informacion basica de el libro")
             switch (decision3) {
                 case "1":
                     const Libroscaros50= libreria.filter((libro)=>{
@@ -620,21 +620,8 @@ while (continuar === "si") {
                         console.table(LibrosPaginas)
                     
                     break;
+                
                 case "3":
-                    const Libroscaros20= libreria.filter((libro)=>{
-                        return libro.precio>11
-                    }).map((libro)=>{
-                        return{
-                            titulo:libro.titulo,
-                            autor:libro.autor,
-                            precio:libro.precio
-                        }
-                    })
-                   
-                        console.table(Libroscaros20)
-                   
-                    break;
-                case "4":
                     const paginasM= libreria.sort((a, b)=>b.paginas-a.paginas).map((libro)=>{
                         return{
                             titulo:libro.titulo,
@@ -646,7 +633,7 @@ while (continuar === "si") {
                         console.table(paginasM)
                    
                     break;
-                case "5":
+                case "4":
                     const Libroscaros= libreria.sort((a, b)=>b.precio-a.precio).map((libro)=>{
                         return{
                             titulo:libro.titulo,
@@ -656,7 +643,7 @@ while (continuar === "si") {
                     })
                   console.table(Libroscaros)
                     break;
-                case "6":
+                case "5":
                     const librosEDitorial = libreria.map((libro)=>{
                         return{
                             titulo:libro.titulo,
