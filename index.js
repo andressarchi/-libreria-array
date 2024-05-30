@@ -664,6 +664,7 @@ while (continuar === "si") {
                             precio:libro.precio
                         }
                     })
+                    console.table(librosEDitorial)
                     break;
                 default:
                     break;
