@@ -590,10 +590,10 @@ while (continuar === "si") {
             console.table(spreed)
             break;
         case"6":
-            let decision3=prompt("Que deseas ver :\n1.libros mayores a 50 dolares\n2.libros con menos de 100 paginas\n3.libros mayores a 20 dolares\n4.ver libros con el numero mas alto de paginas ")
+            let decision3=prompt("Que deseas ver :\n1.libros mayores a 50 dolares\n2.libros con menos de 100 paginas\n3.libros mayores a 20 dolares\n4.ver libros con el numero mas alto de paginas \n5.libros mas caros")
             switch (decision3) {
                 case "1":
-                    const Libroscaros= libreria.filter((libro)=>{
+                    const Libroscaros50= libreria.filter((libro)=>{
                         return libro.precio>50
                     }).map((libro)=>{
                         return{
@@ -602,7 +602,7 @@ while (continuar === "si") {
                             precio:libro.precio
                         }
                     })
-                  
+                  console.table(Libroscaros50)
                     break;
                 case "2":
                     const LibrosPaginas= libreria.filter((libro)=>{
@@ -644,6 +644,16 @@ while (continuar === "si") {
                     
                         console.table(paginasM)
                    
+                    break;
+                case "5":
+                    const Libroscaros= libreria.sort((a, b)=>b.precio-a.precio).map((libro)=>{
+                        return{
+                            titulo:libro.titulo,
+                            autor:libro.autor,
+                            precio:libro.precio
+                        }
+                    })
+                  console.table(Libroscaros)
                     break;
                 default:
                     break;
