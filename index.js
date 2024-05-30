@@ -534,9 +534,9 @@ while (continuar === "si") {
             })
             break;
         case "3":
-                let indice=parseInt(prompt("ingresa el numero de el libro que quieres borrar"))
-                libreria.splice(indice, 1)
+                libreria.pop()
                 console.log("borrado con exito");
+                console.table(libreria)
                 break;
         case "4":
             let decision2= prompt("Que listado quieres ver \n1.Editorial\n2.peso\n3.precio\n4.estado\n5.ubicacion\n6.paginas\n7.dimensiones\n8.descripcion\n9.isbn\n10.formato\n11.fecha")
