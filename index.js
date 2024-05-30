@@ -540,6 +540,7 @@ while (continuar === "si") {
                 break;
         case "4":
             let decision2= prompt("Que listado quieres ver \n1.Editorial\n2.peso\n3.precio\n4.estado\n5.ubicacion\n6.paginas\n7.dimensiones\n8.descripcion\n9.isbn\n10.formato\n11.fecha")
+
             if (decision2 ===1 || decision2 === "1") {
                 console.table(Editorial)
             }
@@ -590,11 +591,11 @@ while (continuar === "si") {
             console.table(spreed)
             break;
         case"6":
-            let decision3=prompt("Que deseas ver :\n1.libros mayores a 50 dolares\n2.libros con menos de 100 paginas\n3.libros mayores a 20 dolares\n4.ver libros con el numero mas alto de paginas \n5.libros mas caros\n6. informacion basica de el libro")
+            let decision3=prompt("Que deseas ver :\n1.libros mayores a 25 dolares\n2.libros con menos de 100 paginas\n3.libros mayores a 20 dolares\n4.ver libros con el numero mas alto de paginas \n5.libros mas caros\n6. informacion basica de el libro")
             switch (decision3) {
                 case "1":
                     const Libroscaros50= libreria.filter((libro)=>{
-                        return libro.precio>50
+                        return libro.precio>25
                     }).map((libro)=>{
                         return{
                             titulo:libro.titulo,
